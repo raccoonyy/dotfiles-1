@@ -84,7 +84,8 @@ systemsetup -settimezone "South Korea/Seoul" > /dev/null
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0.1
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
 
 ###############################################################################
 # Screen                                                                      #
